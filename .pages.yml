@@ -1,0 +1,37 @@
+
+media:
+  input: assets/products
+  output: /assets/products
+
+content:
+  - name: products
+    label: Products Management
+    type: file
+    path: data/products.json
+    format: json
+    list: true
+    fields:
+      - name: name
+        label: Product Name
+        type: string
+        required: true
+
+      - name: category
+        label: Product Category
+        type: string
+
+      - name: price
+        label: Product Price (PKR)
+        type: number
+
+      - name: image
+        label: Product Image
+        type: image
+
+      - name: description
+        label: Product Description
+        type: text
+
+      - name: available
+        label: Available
+        type: boolean
